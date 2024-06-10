@@ -2,6 +2,6 @@ POST http://localhost:3001/api/notes
 Content-Type: application/json
 
 {
-    "content": "VS code is great",
+    "content": "Fourth note to be added after connecting to the database.",
     "important": "true"
 }
