@@ -6,15 +6,6 @@ const uri = process.env.MONGODB_URI;
 
 /* `mongodb+srv://fullstackopen:${password}@fsocluster.pjgu0f8.mongodb.net/noteApp?retryWrites=true&w=majority&appName=FSOCluster`; */
 
-mongoose
-  .connect(uri)
-  .then(() => {
-    console.log("Connected to DATABASE");
-  })
-  .catch((error) => {
-    console.log(`This is the error message, ${error.message}`);
-  });
-
 const noteSchema = mongoose.Schema({
   content: {
     type: String,
